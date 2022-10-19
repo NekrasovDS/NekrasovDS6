@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Магазин услуг BB</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div>
+        <h1>Рассчитать стоимость покупки услуг</h1>
+        <form>
+            <label>Пакет услуг:</label>
+            <select name="prodType">
+                <option value="1">Соула Гудмана</option>
+                <option value="2">Джесси Пинкмана</option>
+                <option value="3">Уолтера Уайта</option>
+            </select>
+            <div id="radios">
+                <label><input type="radio" name="prodOptions" value="option1" checked="checked">Стартовый пакет</label>
+                <label><input type="radio" name="prodOptions" value="option2" >Премиальный пакет</label>
+            </div>
+            <div id="checkboxes">
+                Что включить?
+                <label><input type="checkbox" name="prodM">Дипломат</label>
+                <label><input type="checkbox" name="prodM2">Телефон</label>
+                <label><input type="checkbox" name="prodM3">„Совет“</label>
+            </div>
+            <div>Количество:
+</div>
+            <input id="input" type="number" min="0" max="100" step="1" value="0">
+            Оплатить стоимость покупки:
+            <button id="button1">Дай пять</button>
+            <div id="prodPrice"></div>
+        </form>
+        <script src="script.js"></script>
+</body>
+</html>
